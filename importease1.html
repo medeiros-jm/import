@@ -1,0 +1,262 @@
+<html><head><base href="https://importease.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ImportEase - Simplificando suas Importações</title>
+<style>
+    :root {
+        --primary-color: #3498db;
+        --secondary-color: #2ecc71;
+        --background-color: #ecf0f1;
+        --text-color: #34495e;
+    }
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-color);
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header {
+        background-color: var(--primary-color);
+        color: white;
+        padding: 10px 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .hero {
+        background-image: linear-gradient(rgba(52, 152, 219, 0.8), rgba(52, 152, 219, 0.8)), url('https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background-color: #27ae60;
+    }
+
+    .features {
+        padding: 50px 0;
+    }
+
+    .features h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .feature {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .feature svg {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .testimonials {
+        background-color: white;
+        padding: 50px 0;
+    }
+
+    .testimonials h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .testimonial {
+        max-width: 600px;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+
+    .testimonial img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .feature {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 0.5s ease-out forwards;
+    }
+
+    .feature:nth-child(1) { animation-delay: 0.2s; }
+    .feature:nth-child(2) { animation-delay: 0.4s; }
+    .feature:nth-child(3) { animation-delay: 0.6s; }
+
+    @media (min-width: 768px) {
+        .features .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .feature {
+            flex-basis: 30%;
+        }
+    }
+</style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="/"><svg width="150" height="40" viewBox="0 0 150 40">
+                    <text x="10" y="30" font-family="Arial" font-size="24" fill="white">ImportEase</text>
+                    <path d="M140 20 L145 15 L150 20 L145 25 Z" fill="white"></path>
+                </svg></a>
+            </div>
+            <ul>
+                <li><a href="/como-funciona">Como Funciona</a></li>
+                <li><a href="/precos">Preços</a></li>
+                <li><a href="/contato">Contato</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Simplifique suas Importações com ImportEase</h1>
+                <p>Gerencie todo o processo de importação em uma única plataforma intuitiva e eficiente.</p>
+                <a href="/cadastro" class="cta-button">Comece Agora</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <h2>Recursos do ImportEase</h2>
+                <div class="feature">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                    <h3>Acompanhamento em Tempo Real</h3>
+                    <p>Monitore cada etapa do processo de importação com atualizações em tempo real.</p>
+                </div>
+                <div class="feature">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                    <h3>Segurança e Conformidade</h3>
+                    <p>Garanta que suas importações estejam sempre em conformidade com as regulamentações atuais.</p>
+                </div>
+                <div class="feature">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary-color)" stroke-width="2">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                    <h3>Gestão de Documentos</h3>
+                    <p>Centralize todos os documentos necessários para suas importações em um só lugar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>O que nossos clientes dizem</h2>
+                <div class="testimonial">
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Foto de Maria Silva">
+                    <p>"O ImportEase transformou completamente nossa logística de importação. Agora temos visibilidade total do processo e economizamos tempo e recursos."</p>
+                    <p><strong>Maria Silva</strong>, Gerente de Importação</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 ImportEase. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const features = document.querySelectorAll('.feature');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            features.forEach(feature => {
+                observer.observe(feature);
+            });
+        });
+    </script>
+</body></html>
